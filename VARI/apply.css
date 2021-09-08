@@ -50,6 +50,7 @@ textarea:focus {
 
 /*상단바*/
 header{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,20 +69,16 @@ header{
 }
 .name{
     text-decoration: none;
-    
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-
     color: #395BB4;
-    margin-left: 5vh;
 }
 .geul{
     width: 122px;
     height: 45px;
-
     background: #395BB4;
     border-radius: 50px;
     align-items: center;
@@ -91,7 +88,6 @@ header{
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-
     cursor: pointer;
 }
 
@@ -101,8 +97,53 @@ header{
     font-weight: 600;
     font-size: 15px;
     line-height: 30px;
-
     color: #395BB4;
+}
+
+
+ul li{
+    list-style: none;
+}
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+a {
+    text-decoration: none;
+    color:#333;
+}
+/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+menu박스 가운데정렬, 글자가운데 정렬 */
+#menu {
+    text-align: center;
+}
+
+/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+#menu > ul > li {
+    float:left;
+    width:140px;
+    position:relative;
+    text-align: center;
+}
+
+#menu > ul > li > ul {
+    width:140px;
+    height: 100px;
+    display:none;
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#menu > ul > li:hover > ul {
+    display:block;
+}
+
+.submenu{
+    margin: 20px 0 10px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .mail-image{
@@ -143,7 +184,7 @@ header{
     padding: 0 20px;
 
 
-    color: #8E8E8E;
+    color: #000000;
 }
 
 .name_p{
@@ -182,7 +223,7 @@ header{
     padding: 0 20px;
     border-style: none;
 
-    color: #8E8E8E;
+    color: #000000;
 }
 
 .major_p{
@@ -259,7 +300,7 @@ header{
     line-height: 27px;
     padding: 20px 30px;
 
-    color: #8E8E8E;
+    color: #000000;
 }
 
 .send_button {
