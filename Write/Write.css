@@ -128,9 +128,13 @@ a {
     font-size: 14px;
     line-height: 21px;
 }
-.mail-image{
-    width: 50px;
-    margin-left: 3vh;
+.bell-image{
+    position: absolute;
+    width: 44px;
+    height: 45px;
+    left: 1800px;
+    top: 34px;
+
 }
 .nav-wrapper {
     width: 1680px;
