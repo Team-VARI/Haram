@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @import url("Write.css");
+    </style>
+    <link rel="stylesheet" href="Write.css">
+    <title>VARI</title>
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper"">
+            <a href="#"><img src="./VARI.png" alt="" class="logo"></a>
+            <div class="content">
+                <a href="#"><button class="geul">글쓰기</button></a>
+                <div id="menu">
+                    <ul>
+                        <li><a class="name" href="#"></span>김아련 <span class="nim">님</span></a>
+                            <ul>
+                                <li class="submenu"><a href="#">마이페이지</a></li>
+                                <li class="submenu"><a href="#">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#"><img class="mail-image" src="./Mail.png" alt=""></a>
+            </div>
+         </div>
+    </header>
+    <form>
+        <input type="text" class="title" placeholder="제목을 입력해주세요.">
+    </form>
+    <div class="select_box">
+        <p class="select_content">모집 주제를 선택해주세요</p>
+        <div class="select_option">
+            <select class="select">
+                <option>선택</option>
+                <option>프로젝트</option>
+                <option>대회</option>
+                <option>포트폴리오</option>
+                <option>스터디</option>
+            </select>
+            
+        </div>
+    </div>
+    <div>
+        <p class="team_contents">모집 분야를 선택해주세요</p>
+        <div class="team_option">
+            <select class="team_select">
+                <option>선택</option>
+                <option>WEB</option>
+                <option>Android</option>
+                <option>iOS</option>
+                <option>IoT</option>
+                <option>AI</option>
+                <option>Design</option>
+            </select>
+        </div>
+    </div>
+    <form>
+        <p class="project">프로젝트 이름을 입력해주세요.</p>
+        <input type="text" class="project_content" placeholder="입력">
+    </form>
+    <form>
+        <textarea name="contents" id="contents" placeholder="내용을 입력해주세요." onfocus="this.placeholder=''"onblur="this.placeholder='내용을 입력해주세요.'"></textarea>
+    </form>        
+    <div>
+        <input type="submit" class="save" value="저 장">
+        <a href="#"><button class="cancel">취 소</button></a>
+    </div>
+    <div class="container">
+        <div class="image-upload" id="image-upload">
+
+            <form method="post" enctype="multipart/form-data">
+                <div class="button">
+                    <label for="chooseFile">
+                        <img src="./coolicon.png">
+                    </label>
+                </div>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </form>
+
+            <div class="fileContainer">
+                <div class="fileInput">
+
+                    <p id="fileName"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        function loadFile(input) {
+        var file = input.files[0];	//선택된 파일 가져오기
+
+        //미리 만들어 놓은 div에 text(파일 이름) 추가
+        var name = document.getElementById('fileName');
+        name.textContent = file.name;
+
+        //새로운 이미지 div 추가
+        var newImage = document.createElement("img");
+        newImage.setAttribute("class", 'img');
+
+        //이미지 source 가져오기
+        newImage.src = URL.createObjectURL(file);   
+
+        newImage.style.width = "70%";
+        newImage.style.height = "70%";
+        newImage.style.visibility = "hidden";   //버튼을 누르기 전까지는 이미지를 숨긴다
+        newImage.style.objectFit = "contain";
+        }
+    </script>
+</body> 
+</html>
