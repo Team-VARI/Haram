@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    height: 110vh;
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input:focus { 
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+/*상단바*/
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 10vh;
+    z-index: 99;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+}
+
+.logo_img{
+    width: 141px;
+    height: 32px;
+}
+.name{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #395BB4;
+}
+.write{
+    width: 110px;
+    height: 37px;
+    background: #395BB4;
+    border-radius: 50px;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.nim{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 30px;
+    color: #395BB4;
+}
+
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+/* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+menu박스 가운데정렬, 글자가운데 정렬 */
+#menu {
+    text-align: center; 
+}
+#menu > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 14vh;
+}
+
+/* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+#menu > ul > li {
+    float:left;
+    width:140px;
+    position:relative;
+    text-align: center;
+    list-style: none;
+}
+
+#menu > ul > li > ul {
+    width:140px;
+    height: 90px;
+    display:none;
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #a4a4a4;
+    margin-top: 3px;
+
+}
+#menu > ul > li > ul > li{
+    list-style: none;
+}
+
+
+#menu > ul > li:hover > ul {
+    display:block;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.1);
+
+}
+
+.submenu{
+    margin: 17px 0 10px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.submenu > a{
+    font-size: 14px;
+    color:  #a4a4a4;
+}
+
+.submenu > a:hover{
+    font-weight: bold;
+    color:  #395BB4;
+    transition-duration: 0.3s;  
+}
+
+.bell-img{
+    width: 25px;
+    margin-left: 1vh;
+}
+
+.mail > li{
+    list-style: none;
+}
+
+.mail > li > img{
+    width: 215px;
+}
+
+.nav-wrapper {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.main_font {
+    font-style: bold;
+    font-size: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.vari{
+    font-style: bold;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+}
+
+.main_page_logo{
+    width: 170px;
+}
+
+.main_img{
+    width: 340px;
+}
+
+.main_top{
+    width: 77%;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.space_interval{
+    margin-top: 35px;
+    list-style:none;
+}
+
+.space_interval > img {
+    width: 188px;
+}
+
+#main_page_color{
+    padding-top: 120px;
+    background-color: #F9F9F9;
+    padding-bottom: 170px;
+}
+
+.big-select{
+    width: 21.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-select > ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-select > ul > li{
+    list-style: none;
+}
+
+.big-select > ul > li > a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17.5px;
+    font-style: bold;
+    color: #B1B1B1;
+    display: block;
+    font-weight: bold;
+}
+
+
+.big-select > ul > li > a:hover{
+    color:  #395BB4;
+    transition-duration: 0.3s;
+}
+
+
+.middle-select{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle-select{
+    width: 51%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.middle-select > ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-select > ul > li{
+    list-style: none;
+}
+
+
+.middle-select > ul > li > a {
+    width: 130px;
+    height: 34px;
+    border-radius: 50px;
+    border: 2px solid #474BFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #474BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-select > ul > li > a:hover{
+    transition-duration: 0.38s;
+    background-color:  #474BFF;
+    color: white;
+}
+
+.drop-in-underline {
+    position: relative;
+    padding-bottom: 10px;
+}
+.drop-in-underline:before{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0; right: 0;
+    height: 4px;
+    border-radius: 50px;
+    background-color:  #395BB4;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.30);
+}
+
+.drop-in-underline:before{
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+.drop-in-underline:hover:before{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-select-interval{
+    margin-top: 55px;
+}
+
+.project-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+.project {
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.1);
+    margin-left: 17px;
+}
+.project > ul > li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.project_ex{
+    align-items: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.project_name{
+    font-size: 13px;
+    color: #646464;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.project > ul > li > img{
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.project > div{
+    display: flex;
+    align-items: right;
+}
+
+
+.E_project_font{
+    font-family: 'Poppins','NotoSans KR';
+    font-weight: lighter;
+}
+
+.K_project_font{
+    font-family: 'Noto Sans KR','NotoSans KR';
+    font-weight: lighter;
+}
+
+
