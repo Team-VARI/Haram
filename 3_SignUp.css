@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 배너 */
+header img{
+    position: absolute;
+    width: 170px;
+    height: 39px;
+    left: 875px;
+    top: 138px;
+}
+
+/* 정보 입력란 */
+.SignUp-form{
+    position: absolute;
+    width: 500px;
+    height: 365px;
+    left: 710px;
+    top: 270px;
+}
+.SignUp-area{
+    position: relative;
+}
+.SignUp-area label{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+.SignUp-area input{
+    width: 500px;
+    height: 60px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0 28px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 28px;
+    /* identical to box height */
+    color: #9A9A9A;
+}
+
+.SignUp-area input:focus{
+    outline: none;
+    color: #333;
+}
+/* 회원가입 버튼 */
+.btn-area a{
+    position: absolute;
+    width: 500px;
+    height: 76px;
+    top: 450px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    border: none;
+    border-radius: 10px;
+    /* identical to box height */
+    text-align: center;
+    color: #ffffff;
+    background-color: #395BB4;
+    text-decoration: none;
+    line-height: 275%;
+}
+
+.btn-area button:hover{
+    cursor: pointer;
+}
+/* 이미 계정이 있으신가요? 로그인 */
+.back-login{
+    position: absolute;
+    width: 220px;
+    height: 21px;
+    left: 157px;
+    top: 576px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 83px;
+    color: #9F9F9F;
+}
+.back-login a{
+    color: #9F9F9F;
+    text-decoration: none;
+}
+
+.btn-area>a:hover {
+    background: #424546;
+}

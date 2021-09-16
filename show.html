@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./show.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a href="main_page.html"><img class="logo_img" src="VARI.png" alt=""></a>
+            <div class="content">
+                <a href="#"><button class="write">글쓰기</button></a>
+                <div id="menu">
+                    <ul>
+                        <li><a class="name" href="#"></span>김아련 <span class="nim">님</span></a>
+                            <ul>
+                                <li class="submenu"><a href="#">마이페이지</a></li>
+                                <li class="submenu"><a href="#">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="dropbtn"><img class="bell-img" src="/VARI_main/img/bell.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <div class="drop-content">
+        <a href="#" class="checkon"><div class="O"></div>서유선 <strong>님의  신청 확인</strong></a>
+        <a href="#" class="checkon"><div class="O"></div>문지혜 <strong>님의  신청 확인</strong></a>
+        <a href="#" class="checkoff"><div class="O"></div>백다미 <strong>님의  신청 확인</strong></a>
+        <a href="#" class="checkoff"><div class="O"></div>박하람 <strong>님의  신청 확인</strong></a>
+        <a href="#" class="checkoff"><div class="O"></div>정대우 <strong>님의  신청 확인</strong></a>
+        <a href="#" class="checkoff"><div class="O"></div>진예원 <strong>님의  신청 확인</strong></a>
+      </div>
+
+
+    <div>
+        <p id="study">프로젝트 - #WEB</p>
+        <p id="title">프로젝트 할 프론트 구해요!</p>
+        <div id="dropdown">
+            <p style="width: 150px;">참고자료</p>
+            <!-- <button class="down"></button> -->
+            <button type="button" onclick="ShowImg()"></button></a>
+            <div style="display: none;" id="drop-content">
+                <!-- <a href='#'>기능명세서.png</a>
+                <a href='#'>개발계획서.png</a> -->
+                <img src="drop.png">
+            </div>
+        </div>
+
+        <img src="project.png" id="bamboo">
+        <p id="content">
+            광주 소프트웨어 마이스터고 대나무 숲 웹 페이지를 제작하려고 합니다! <br>
+            Front-End 웹 앱 개발 경력 제한 없음 <br>
+            HTML, CSS, java-script 등 웹 기반 OTT 서비스 개발 혹은 <br> 
+            교육 서비스 개발 경험 보유자면 더 좋습니다 <br>
+        </p>
+        <a href="./apply.html"><button id="applybutton"> 신 청 </button></a>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function ShowImg() {
+            let click = document.getElementById("drop-content");
+            if (click.style.display === "none") {
+                click.style.display = "block";
+                console.log('성공');
+
+            } else {
+                click.style.display = "none";
+
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="Show_Writer.js"></script>
+</body>
+
+</html>

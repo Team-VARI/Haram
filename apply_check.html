@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./apply_check.css">
+    
+    <title>VARI</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a href=" #"><img src="./VARI.png" alt="" class="logo"></a>
+            <div class="content">
+                <a href="#"><button class="geul">글쓰기</button></a>
+                <div id="menu">
+                    <ul>
+                        <li><a class="name" href="#"></span>김아련 <span class="nim">님</span></a>
+                            <ul>
+                                <li class="submenu"><a href="#">마이페이지</a></li>
+                                <li class="submenu"><a href="#">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="dropbtn"><img class="mail-image" src="./Mail.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <div class="drop-content">
+      <a href="#" class="checkon"><div class="O"></div>서유선 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkon"><div class="O"></div>문지혜 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>백다미 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>박하람 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>정대우 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>진예원 <strong>님의  신청 확인</strong></a>
+    </div>
+
+    <section>
+        <form action="#" method="post">
+            <p class="name_p">이름 학번</p>
+            <input type="text" name="name_id" id="name_id" placeholder="2211 서유선">   
+            <p class="major_p">신청 분야</p>
+            <input type="text" id="apply_select" placeholder="-">
+            <p class="language_p">사용할 수 있는 스택</p>
+            <input type="text" name="language" id="language_select"placeholder="Python, Kotlin">
+
+            <textarea name="content" id="content_select" placeholder="같이 ncs 공부하면서 취업 성공하고 싶어요.
+저는 수리 능력을 잘합니다!
+저는 아직 풀었던 ncs 책이 없습니다."></textarea>
+        </form>
+
+        <input type="submit" class="send_button" value="수락">
+        <a href="#"><button class="cancle_button">거절</button></a>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="Show_Writer.js"></script>
+</body>
+</html> 

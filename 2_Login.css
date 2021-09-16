@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.home-logo {
+    margin-top: 125px;
+    text-align: center;
+}
+
+/* HOME
+----------------*/
+.wrapper {
+    text-align: center;
+    margin-top: 8%;
+    /* max-width: 1000px; */
+}
+
+form div {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.125rem;
+    margin: 10px 20px;
+    margin-right: 284px;
+    display: block;
+    text-align: center;
+}
+
+.email {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    margin-right: 480px;
+}
+
+#email {
+    width: 500px;
+    height: 60px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    padding-left: 28px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #9A9A9A;
+    margin: 10px 0 10px 0;
+}
+
+.password {
+    margin: 10px 0;
+    margin-right: 411px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #000000;
+}
+
+#password {
+    width: 500px;
+    height: 60px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    padding-left: 28PX;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #9A9A9A;
+    margin: 10px 0 10px 0;
+}
+
+.login_btn:hover {
+    background: #424546;
+}
+
+.button2 {
+    background-color: #fff;
+    color: #9F9F9F;
+}
+
+footer {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.login_btn {
+    width: 500px;
+    height: 76px;
+    margin-top: 75px;
+    background-color: #395BB4;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+}

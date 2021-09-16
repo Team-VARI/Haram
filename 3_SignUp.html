@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARI</title>
+    <link rel="stylesheet" href="./3_SignUp.css">
+</head>
+<body>
+    <script>
+        function btn(){
+            alert("회원가입이 완료 되었습니다.");
+        }
+    </script>
+    <!-- 배너 -->
+    <header class="banner">
+        <a href="./1_start.html"><img src="VARI.png"></a>
+    </header>
+
+    <!-- 입력창 -->
+    <section class="SignUp-form">
+        <form action="">
+            <div class="SignUp-area">
+                <label id="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="이름을 입력하세요." autocomplete="off">
+            </div>
+
+            <div class="SignUp-area"> 
+                <label id="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="이메일을 입력하세요." autocomplete="off">
+            </div>
+
+            <div class="SignUp-area">
+                <label id="pw">Password</label>
+                <input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요.">
+            </div>
+
+            <div class="btn-area">
+                <a href="./2_Login.html" onclick="javascript:btn()">회원가입</a>
+            </div>
+        </form>
+        
+        <div class="back-login">
+            <a href="./2_Login.html">이미 계정이 있으신가요? 로그인</a>
+        </div>
+    </section>
+</body>
+</html>

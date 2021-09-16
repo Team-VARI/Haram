@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./apply.css">
+    
+    <title>VARI</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a href="/VARI_main/Main.html"><img src="./VARI.png" alt="" class="logo"></a>
+            <div class="content">
+                <a href="./Write.html"><button class="geul">글쓰기</button></a>
+                <div id="menu">
+                    <ul>
+                        <li><a class="name" href="#"></span>김아련 <span class="nim">님</span></a>
+                            <ul>
+                                <li class="submenu"><a href="#">마이페이지</a></li>
+                                <li class="submenu"><a href="./1_start.html">로그아웃</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="dropbtn"><img class="bell-img" src="/VARI_main/img/bell.png" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <div class="drop-content">
+      <a href="#" class="checkon"><div class="O"></div>서유선 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkon"><div class="O"></div>문지혜 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>백다미 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>박하람 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>정대우 <strong>님의  신청 확인</strong></a>
+      <a href="#" class="checkoff"><div class="O"></div>진예원 <strong>님의  신청 확인</strong></a>
+    </div>
+
+    <section>
+        <form action="#" method="post">
+            <p class="name_p">이름과 학번을 입력해주세요.</p>
+            <input type="text" name="name_id" id="name_id" placeholder="ex) 진예옹 3199"
+            onfocus="this.placeholder=''"onblur="this.placeholder='ex) 진예옹 3199'">
+            <p class="major_p">신청 분야를 선택해주세요.</p>
+            <select name="major" id="apply_select">
+                <option value="WEB" selected>WEB</option>
+                <option value="Android" selected>Android</option>
+                <option value="iOS" selected>iOS</option>
+                <option value="AI" selected>AI</option>
+                <option value="Design" selected>Design</option>
+                <option value="" selected>선택</option>
+            </select>
+            <p class="language_p">사용할 수 있는 언어를 적어주세요</p>
+            <input type="text" name="language" id="language_select"placeholder="ex) Python, Kotlin"
+            onfocus="this.placeholder=''"onblur="this.placeholder='ex) Python, Kotlin'">
+
+            <textarea name="content" id="content_select" placeholder="내용을 입력해주세요."
+            onfocus="this.placeholder=''"onblur="this.placeholder='내용을 입력해주세요.'"></textarea>
+        </form>
+
+        <a href="./show_apply.html" class="send_button" onclick="apply()">신 청</a>
+        <a href="show.html"><button class="cancle_button">취 소</button></a>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="Show_Writer.js"></script>
+
+      <script>
+          function apply(){
+              alert('신청이 완료되었습니다!')
+          }
+      </script>
+</body>
+</html> 

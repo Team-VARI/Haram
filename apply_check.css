@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    height: 150vh;
+    line-height: 1;
+    -ms-overflow-style: none; 
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 15vh;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  input:focus { 
+    outline: none;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  textarea:focus {
+    outline: none;
+  }
+  
+  
+  /*상단바*/
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: 12vh;
+    z-index: 99;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+  }
+  
+  .logo{
+    width: 141px;
+    height: 32px;
+  }
+  .name{
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #395BB4;
+  }
+  .geul{
+    width: 122px;
+    height: 45px;
+    background: #395BB4;
+    border-radius: 50px;
+    align-items: center;
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  
+  .nim{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #395BB4;
+  }
+  
+  
+  ul li{
+    list-style: none;
+  }
+  /* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+  a {
+    text-decoration: none;
+    color:#333;
+  }
+  /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+  menu박스 가운데정렬, 글자가운데 정렬 */
+  #menu {
+    text-align: center;
+  }
+  
+  /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+  #menu > ul > li {
+    float:left;
+    width:140px;
+    position:relative;
+    text-align: center;
+  }
+  
+  #menu > ul > li > ul {
+    width:140px;
+    height: 100px;
+    display:none;
+    position: absolute;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  #menu > ul > li:hover > ul {
+    display:block;
+  }
+  
+  .submenu{
+    margin: 20px 0 10px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .mail-image{
+    width: 50px;
+  }
+  .drop-content {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    margin-left: 1630px;
+    margin-top: -18px;
+    z-index: 100;
+    width: 218px;
+    height: 226px;
+    background-color: #fff;
+    border:3px solid #395BB4; ;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
+  }
+  .drop-content > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 16px;
+  }
+   strong{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    
+    
+  }
+  .checkon > .O {
+    /* position: absolute; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF5B37;
+    margin-right: 15px;
+  }
+  .checkoff > .O {
+    /* position: absolute; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #33E24F;
+    margin-right: 15px;
+  }
+  
+  
+  
+  
+  .nav-wrapper {
+    width: 1680px;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+#name_id{
+    position: absolute;
+    right: 132.8vh;
+    top: 310px;
+    width: 32vh;    
+    height: 60px;
+    left: 375px;
+    resize: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.name_p{
+    position: absolute;
+    width: 234px;
+    height: 27px;
+    left: 375px;
+    top: 253px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#apply_select {
+    position: absolute;
+    left: 775px;
+    top: 310px;
+    width: 32vh;    
+    height: 60px;   
+    resize: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    border-style: none;
+}
+
+.major_p{
+    position: absolute;
+    width: 234px;
+    height: 27px;
+    left: 775px;
+    top: 253px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#language_select {
+    position: absolute;
+    left: 1160px;
+    top: 310px;
+    width: 37vh;    
+    height: 60px;   
+    resize: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000
+}
+
+.language_p {
+    position: absolute;
+    width: 37vh;
+    height: 27px;
+    left: 1160px;
+    top: 253px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000;
+}
+
+#content_select {
+    position: absolute;
+    left: 375px;
+    top: 425px;
+    width: 1134px;
+    height: 400px;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;  
+
+    color: #000000;
+    resize: none;
+}
+
+.send_button {
+    position: absolute;
+    left: 1293px;
+    top: 930px;
+    width: 110px;
+    height: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+
+    background: #395BB4;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+
+.cancle_button {
+    position: absolute;
+    left: 1433px;
+    top: 930px;
+    width: 110px;
+    height: 50px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+
+    background: #C7CFE3;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
